@@ -2,47 +2,46 @@
 
 import java.util.Scanner;
 class HelloWorld {
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         
-        Scanner Q = new Scanner(System.in);
-        int spice = 0;
+        Scanner scanner = new Scanner(System.in);
+        int totalSpice = 0;
         System.out.print("How many peppers do you want? ");
-        
-        int num = Q.nextInt();
-        Q.nextLine();
+        int num = scanner.nextInt();
+        scanner.nextLine();
         
         System.out.print("Which peppers do you want? ");
         System.out.print("\n");
         System.out.print("OPTIONS ARE:");
         System.out.print("Poblano, Mirasol, Serrano, Cayenne, Thai, Habanero");
         System.out.print("\n");
-        String[] PE = new String[num] ;
+        String[] pepper = new String[num] ;
         for (int i = 0; i < num; i++)
         {
         System.out.print("Enter pepper " + (i+1) + ":");
-        PE[i] = Q.nextLine();
+        pepper[i] = scanner.nextLine();
 
-        switch (PE[i].toLowerCase()) {
+        switch (pepper[i].toLowerCase()) {
         case "poblano":
-            spice = spice + 1500;
+            totalSpice = totalSpice + 1500;
             break;
         case "mirasol":
-           spice = spice + 6000;
+           totalSpice = totalSpice + 6000;
            break;
         case "serrano":
-            spice = spice + 15500;
+            totalSpice = totalSpice + 15500;
             break;
         case "cayenne":
-            spice = spice + 40000;
+            totalSpice = totalSpice + 40000;
             break;
         case "thai":
-            spice = spice + 75000;
+            totalSpice = totalSpice + 75000;
             break;
         case "habanero":
-            spice = spice + 125000;
+            totalSpice = totalSpice + 125000;
             break;
         }
         }
-        System.out.print("The total spice is " + spice + " Scoville Heat units");
+        System.out.print("The total spice is " + totalSpice + " Scoville Heat units");
     }
 }
