@@ -1,3 +1,4 @@
+// 2024 J1
 import java.util.Scanner;
 class conveyerBeltSushi{
     public static void main(String[] args){
