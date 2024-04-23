@@ -1,4 +1,4 @@
-//2024 J2
+// 2024 J2
 import java.util.Scanner;
 class DusaYobis{
     public static void main(String[] args){
