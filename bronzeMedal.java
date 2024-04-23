@@ -1,4 +1,4 @@
-//2024 J3
+// 2024 J3
 import java.util.Scanner;
 class bronzeMedal {
     public static void main(String[] args)
